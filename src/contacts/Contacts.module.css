@@ -12,7 +12,7 @@
 }
 
 .form {
-    width: 400px;
+    width: 280px;
     height: 220px;
     border: 1px solid;
     display: flex;
@@ -22,7 +22,10 @@
 
 input {
     background-color: #ceced5;
+    height: 25px;
 }
 
 textarea {
-    background-color: #ceced5;}
+    background-color: #ceced5;
+
+}
