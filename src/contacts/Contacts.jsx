@@ -11,8 +11,9 @@ export const Contacts = () => {
                     <input type="text"/>
                     <input type="text"/>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <Button lable={'Отправить'}/>
                 </form>
-                <Button lable={'Отправить'}/>
+
             </div>
         </div>
     )
