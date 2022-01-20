@@ -1,6 +1,5 @@
 .progectBlock {
-    min-height: 100vh;
-    background-color: #c98cfc;
+    background-color: #1d1b19;
 }
 
 .progectsContainer {
@@ -19,4 +18,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 755px) {
+    .progects{
+        justify-content: center;
+    }
 }

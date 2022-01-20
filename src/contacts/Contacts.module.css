@@ -11,8 +11,7 @@
 }
 
 .form {
-    width: 280px;
-    height: 220px;
+    width: 50%;
     border: 1px solid;
     display: flex;
     flex-direction: column;
@@ -27,8 +26,17 @@ input {
 
 textarea {
     background-color: #ceced5;
+    height: 70px;
 }
+
+
 
 .form input, .form textarea {
     width: 100%;
+}
+
+@media screen and (max-width: 754px){
+    .form {
+        width: 100%;
+    }
 }
