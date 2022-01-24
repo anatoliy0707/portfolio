@@ -1,27 +1,26 @@
-.progectBlock {
-    background-color: #1d1b19;
+.projectBlock {
+    background-color: #1f1f20;
 }
 
-.progectsContainer {
+.projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
 }
 
-.title {
-    background-color: aliceblue;
-}
 
-.progects {
-    border: 1px solid;
+
+.projects {
+    margin-top: 30px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
-@media screen and (max-width: 755px) {
-    .progects{
+@media screen and (max-width: 1140px) {
+    .projects {
         justify-content: center;
     }
 }

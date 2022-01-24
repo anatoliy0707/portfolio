@@ -2,7 +2,7 @@ import './App.css';
 import {Header} from "./header/Header";
 import {Main} from "./main/Main";
 import {Skills} from "./skills/Skills";
-import {Progects} from "./progects/Progects";
+import {Projects} from "./projects/Projects";
 import {Contacts} from "./contacts/Contacts";
 import {Footer} from "./footer/Footer";
 
@@ -12,7 +12,7 @@ function App() {
         <Header/>
         <Main/>
         <Skills/>
-        <Progects/>
+        <Projects/>
         <Contacts/>
         <Footer/>
     </div>
