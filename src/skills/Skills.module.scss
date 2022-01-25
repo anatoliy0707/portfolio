@@ -1,0 +1,32 @@
+@import "../common/styles/sass/variables";
+
+.skillsBlock {
+  background-color: $bgGreyColor;
+
+  .skillsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+    .skills {
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      @media screen and (max-width: 629px) {
+        justify-content: center;
+      }
+
+      .title {
+        background-color: aliceblue;
+      }
+    }
+  }
+}
+
+
+
+
+
+
