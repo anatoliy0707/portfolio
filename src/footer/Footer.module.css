@@ -1,10 +1,10 @@
 .footerBlock {
-    height: 60vh;
     background-color: #a8ffe1;
 }
 
 .container {
     flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .title {
