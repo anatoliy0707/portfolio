@@ -1,0 +1,13 @@
+@import "../common/styles/sass/mixin";
+
+.navBlock {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    @include text($titleFontFamily, 1.8, 14);
+    color: $primaryColor;
+  }
+}

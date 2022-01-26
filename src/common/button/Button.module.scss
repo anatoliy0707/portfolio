@@ -1,8 +1,10 @@
+@import "../styles/sass/variables";
+
 .btn {
     display: flex;
     min-width: 120px;
     height: 50px;
-    background-color: #252527;
+    background-color: $bgDarkColor;
     align-items: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;

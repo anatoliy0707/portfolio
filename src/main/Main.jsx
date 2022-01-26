@@ -1,4 +1,4 @@
-import style from './Main.module.css'
+import style from './Main.module.scss'
 import styleContainer from './../common/styles/Container.module.css'
 
 export const Main = () => {
@@ -8,7 +8,7 @@ export const Main = () => {
                 <div className={style.text}>
                     <span>Hi There</span>
                     <h1>I am Anatoliy Sukhanov</h1>
-                    <p>React Frontend Developer</p>
+                    <p>React Developer</p>
                 </div>
                 <div className={style.photo}></div>
             </div>

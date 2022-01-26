@@ -1,0 +1,52 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixin";
+
+.mainBlock {
+  min-height: 100vh;
+  background-color: $bgDarkColor;
+  display: flex;
+  align-items: center;
+
+  .text {
+    width: 300px;
+
+    span {
+      @include text($textFontFamily, 1.8, 16px);
+      font-weight: 400;
+    }
+
+    h1 {
+      @include text($titleFontFamily, 1.8, 50px);
+      margin: 0;
+    }
+
+    p {
+      @include text($textFontFamily, 1.8, 27px);
+      margin: 0;
+    }
+  }
+
+  .photo {
+    width: 300px;
+    height: 400px;
+    background-image: url("../assets/images/me.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border: 5px solid $primaryColor;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: $bgDarkColor;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      opacity: 0.2;
+    }
+  }
+}
+
+
+
