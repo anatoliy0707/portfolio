@@ -1,6 +1,7 @@
 @import "../common/styles/sass/variables";
 @import "../common/styles/sass/mixin";
 
+
 .footerBlock {
   display: flex;
   flex-direction: column;
@@ -10,7 +11,7 @@
   align-items: center;
 
   .title {
-    @include text($textFontFamily, 1.8, 14px);
+    @include text($titleFontFamily, 1.8, 14px);
     margin: 0 0 20px;
 
 
@@ -20,13 +21,13 @@
   }
 
   .footerText {
-    background-color: aliceblue;
+    @include text($textFontFamily, 1.8, 14px);
+    color: #696b6f;
     margin-top: 20px;
   }
 
   .iconBlock {
     width: 280px;
-    background-color: aliceblue;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,7 +35,20 @@
     .icon {
       width: 50px;
       height: 50px;
-      background-color: #696b6f;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        background-color: $bgGreyColor;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0.4;
+      }
     }
   }
 }
