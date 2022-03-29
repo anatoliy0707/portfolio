@@ -1,5 +1,7 @@
 import style from './Project.module.scss'
 import {Button} from "../common/button/Button";
+import Tilt from 'react-tilt'
+import React from "react";
 
 
 export const Project = (props) => {

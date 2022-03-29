@@ -1,17 +1,50 @@
+import React from 'react'
 import style from './Main.module.scss'
 import styleContainer from './../common/styles/Container.module.css'
+import Fade from 'react-reveal/Fade';
+import ReactTypingEffect from 'react-typing-effect';
+import Tilt from 'react-tilt'
+import Particles from "react-tsparticles";
+
+
+// const particlesOpt = {
+//     "particles": {
+//         "number": {
+//             "value": 150,
+//             "density": {
+//                 "enable": true,
+//                 "value_area": 800
+//             }
+//         }
+//     }
+// }
 
 export const Main = () => {
+
     return (
-        <div className={style.mainBlock}>
-            <div className={styleContainer.container}>
-                <div className={style.text}>
-                    <span>Hi There</span>
-                    <h1>I am Anatoliy Sukhanov</h1>
-                    <p>React Developer</p>
+        <div id='main' className={style.mainBlock}>
+            {/*<Particles className={style.particles}  params={particlesOpt}/>*/}
+            <Fade top>
+                <div className={styleContainer.container}>
+                    <div className={style.text}>
+                        <span>Hi There</span>
+                        <h1>I am Anatoliy <span>Sukhanov</span></h1>
+                        {/*<p>Front-end Developer</p>*/}
+                        <ReactTypingEffect
+                            className={style.typingEffect}
+                            text={["Front-end Developer"]}
+                            speed={"100"}
+                        />
+                    </div>
+                    <Tilt className="Tilt" options={{max: 15}}>
+                        <div className={style.photoContainer}>
+                            <div className={style.photo}/>
+                            <div className={style.border}/>
+                        </div>
+                    </Tilt>
                 </div>
-                <div className={style.photo}></div>
-            </div>
+            </Fade>
         </div>
     )
 }
+

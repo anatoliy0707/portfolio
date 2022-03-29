@@ -9,5 +9,12 @@
     text-decoration: none;
     @include text($titleFontFamily, 1.8, 16px);
     color: $primaryColor;
+    &:hover {
+      color: #b0c9ea;
+      cursor: pointer;
+    }
+  }
+  .active {
+    color: #b0c9ea;
   }
 }
