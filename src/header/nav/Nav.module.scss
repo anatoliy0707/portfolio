@@ -1,4 +1,4 @@
-@import "../common/styles/sass/mixin";
+@import "../../common/styles/sass/mixin";
 
 .navBlock {
   width: 300px;
@@ -16,5 +16,8 @@
   }
   .active {
     color: #b0c9ea;
+  }
+  @media screen and (max-width: 750px){
+
   }
 }

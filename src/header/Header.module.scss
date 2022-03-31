@@ -8,5 +8,9 @@
     align-items: center;
     justify-content: flex-end;
     position: fixed;
+    opacity: 0.9;
     z-index: 1;
+    @media screen and (max-width: 750px) {
+        justify-content: center;
+    }
 }

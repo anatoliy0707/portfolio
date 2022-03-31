@@ -4,26 +4,14 @@ import styleContainer from './../common/styles/Container.module.css'
 import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-tilt'
-import Particles from "react-tsparticles";
 
 
-// const particlesOpt = {
-//     "particles": {
-//         "number": {
-//             "value": 150,
-//             "density": {
-//                 "enable": true,
-//                 "value_area": 800
-//             }
-//         }
-//     }
-// }
+
 
 export const Main = () => {
 
     return (
         <div id='main' className={style.mainBlock}>
-            {/*<Particles className={style.particles}  params={particlesOpt}/>*/}
             <Fade top>
                 <div className={styleContainer.container}>
                     <div className={style.text}>
